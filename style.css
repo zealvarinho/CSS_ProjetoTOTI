@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #474455;
+    height: 760px;
+   }
+
+  
+
+/* Navbar (sit on top)  */
+
+
+.toppag {
+    display: flex;
+    flex-direction: row;
+    border: #707070;
+    height: 8vw;
+    width: 100%;
+    padding: 0.2em 0em 0.2em 0em;
+    justify-content: center;
+    background-color: #1a1822;
+}
+    .fototop{ 
+        height: auto;
+        width: auto;
+        margin-right: 5%;
+    }
+    .mainmenu {
+        display: flex;
+        flex-direction: row;
+        color: #FFFFFF;
+        align-items: center;
+        padding-right: 0em;
+        margin-left: 8%;           
+    } 
+    .mainmenu a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size:1vw;
+        outline: 0;
+        margin-right: 2em; 
+       }
+
+    .mainmenu ul {
+        list-style: none;
+        line-height: 160%                
+        }   
+        
+    .mainmenu > ul > li {
+        float: left;
+        } 
+        
+    .mainmenu li.active a {
+        height: 3em;
+        background:  #8f6e6e; 
+        border: 0.5em solid   #8f6e6e;
+        border-radius: 1em;
+        color: whitesmoke;
+                }
+
+
+ /* Menu desplegable pantalla pequena */
+ .dropdown { display: none;}
+ .dropbtn {
+     background-color:#1a1822;
+     color: #c5a196;
+     font-size: 15px;
+     font-weight: bold;
+     border: none;
+     cursor: pointer;
+   }
+ 
+ .dropdown-content {
+     display: none;
+     position: relative;
+     background-color: #180E0C;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     font-size: 2px;
+     text-decoration: none;
+     list-style: none;
+   }
+   /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+     display: none;
+     font-size: 2px;
+   }
+/* Fin Menu desplegable pantalla pequena */
+
+@media screen and (max-device-width : 768px) {
+ .mainmenu ul { display: none;}
+ .dropdown { 
+     display: block;
+     position: relative;
+ }
+ .dropdown-content {
+     font-size: 5px;}
+
+ .toppag {
+     justify-content: space-between;
+     align-content: center;
+     height: 3.75em;
+     width: 100%;
+     padding: 0.2rem 0.8rem;}
+ }
+
+@media screen and (min-device-width : 1024px) {
+ .mainmenu ul { display: block;}
+  }
+
+  /* Banner */
+
+#banner
+{
+   background: url(img/bannerkathe.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;  
+} 
+
+@media screen and (max-device-width : 768px) { 
+#banner
+{
+   background: url(img/bannerkathe.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top:0px;
+   height: 30vmin;
+} 
+}
+
+/*CONTEUDO */
+
+/* Content Parte1- Version Desktop */
+.mainMobile {display: none;}
+.redpmobile {display: none;}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4em 6em 2em 4em;
+    }
+.colum1{
+    display:flex ;
+    flex-direction: column;
+    align-items:flex-end;
+    width: 50%;
+}
+
+.fotomain {width: 30em;
+     margin-top: 60px;
+     margin-right: 60px;
+     }
+
+.redp {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+}          
+.imggh {width: 100px;
+        margin-right: 150px;}
+
+.imglink {width: 100px;
+        border-radius: 50%;}
+
+.colum2 {
+    width: 50%;
+    font-size: 2em;
+    text-align: justify;
+    color: #474455;
+    padding: 2em 6em 2em 2em ;
+}
+
+/* Content Parte1- Version Mobile */
+
+@media screen and (max-device-width : 768px) {
+    .main{display: none;}
+    .redp {display: none;}
+    .mainMobile {
+        display: flex; 
+        flex-direction: column;
+        align-content: center;
+        padding: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        }
+    .colum1 {align-items: center;
+             width: 100%;}
+             
+    .colum2 {width: 100%;
+            font-size: 15px;
+            margin: 2px 20px 2px 65px}
+}
+    .fotomain {margin-left: 300px;}
+
+    .redpmobile {display:flex;
+                flex-direction: row;
+                margin-right: 250px;}
+              
+    .imgghm {width: 2.5em;
+        }
+
+    .imglinkm { width: 2.5em;
+            border-radius: 50%;
+            margin-left: 230px;
+           
+}
+
+
+/* Content Parte2- Version Desktop */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #9f9baf;
+    justify-content: center;
+    padding: 100px 20px 100px 600px;}
+.form h2 {font-size:45px;
+    letter-spacing: 10px;
+    color: #d2cde6;}
+.ingq {margin-top: 40px;
+        border-left:10px solid #474455;
+        color:#191336}
+.inga {margin-top: 20px;
+    border-left:10px solid #474455;
+    color:#191336}
+.form h3,h4,h5 {
+    margin-left: 20px;
+    font-size: 35px;
+} 
+    .form h5 {color: #242035;}
+    .form h4 {color: #242035;}  
+    .form h3 {color: #242035;} 
+
+/* Content Parte2- Version Mobile */
+
+@media screen and (max-device-width : 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #9f9baf;
+        justify-content: center;
+        padding: 50px 20px 100px 20px ;
+    }
+    .form h2 {font-size:20px;
+        letter-spacing: 10px;
+        }
+    .form h5 {font-size: 10px;}
+    .form h4 {font-size: 15px;}  
+    .form h3 {font-size: 20px;} 
+}
+
+/* Content Parte3- Version Desktop */
+
+ .exp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #242035;
+    justify-content: center;
+    padding: 100px 20px 100px 600px;
+    color: #9f9baf;
+    margin-top: 0px;}
+.exp h2 {font-size:45px;
+        letter-spacing: 10px;
+        color: #d2cde6;}
+.exp h3,h4,h5 {
+        margin-left: 20px;
+        font-size: 35px;
+        color:#c5a196;}
+
+/* Content Parte3- Version Mobile */
+
+@media screen and (max-device-width : 768px) {
+    .exp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #242035;
+        justify-content: center;
+        padding: 50px 20px 100px 20px ;
+    }
+    .exp h2 {font-size:20px;
+        letter-spacing: 10px;
+        }
+    .exp h5 {font-size: 10px;}
+    .exp h4 {font-size: 15px;}  
+    .exp h3 {font-size: 20px;} 
+}
+
+/* Content Parte4- Version Desktop */
+.proj {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 150px 20px 100px 20px;}
+.projecto h2 {
+    font-size:45px;
+    letter-spacing: 10px;
+    color: #474455;
+    margin-left: 600px;
+    margin-top: 80px;}
+.card {
+    height: 500px;
+    width: 35rem;
+    margin-left: 20px;
+    margin-right: 20px;}
+
+.imcard {width:100%;
+    height:300px}
+
+/* Content Parte4- Version Mobile */
+
+@media screen and (max-device-width : 768px) {
+    .proj {flex-wrap: wrap;
+        width: 100%;
+        padding: 50px 20px 100px 20px;
+        align-content: center;
+    }
+    .projecto h2 {
+        font-size:20px;
+        letter-spacing: 10px;;
+        margin-left:20px ;
+        color: #474455;}
+        
+    .card {width: 15rem;
+            margin-bottom: 15px;
+            height:400px;}
+    .imcard {width:100%;
+            height:200px;}
+      
+}
+
+/* Content Parte5- Version Desktop */
+.mensagemmob{display: none;}
+.botonesm{display: none;}
+.contato {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #14131a;
+    width: 100%;
+    color: #8f6e6e;}
+
+.contato h2 {font-size:45px;
+    letter-spacing: 10px;
+    color:  #9f9baf;
+    margin-left: 100px;
+    margin-top: 80px;}
+
+.texto {float: left;
+        font-size: 40px;
+        width: 20%;
+        text-align: justify;
+        margin: 400px 200px 200px 100px;}
+.caixa {width: 650px;
+        height: 60px;}
+.caja {margin-top:120px ;}
+.botones {margin-left: 200px;}
+
+.foot {display:flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+
+/* Content Parte5- Version Mobile */
+@media screen and (max-device-width : 768px) {
+    .mensagem{display: none;}
+    .botones{display: none;}
+    .botonesm{display: block;}
+    .mensagemmob {display: block;}
+    .contato {display: flex;
+              flex-direction: column;
+              margin-bottom: 40px;}
+    
+    .contato h2 {font-size:20px;
+                margin-left: 20px;}
+
+    .texto {float: left;
+                font-size: 20px;
+                width: 80%;
+                text-align: justify;
+                margin: 20px 80px 20px 30px;}
+
+    .caja h3 {font-size: 15px;}            
+
+    .caixa {width: 283px;
+        height: 40px;}
+
+    .caja {
+        width: 300px;
+        margin: 0px 200px 100px 30px;}
+
+    .foot {display:flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;}
+    }
